@@ -1,0 +1,296 @@
+@charset "utf-8" ;
+/* ページトピック */
+.page__topic {
+    width: 100%;
+    height: auto;
+    padding: 67px 0 57px;
+    position: relative;
+}
+
+.page__topic::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pageTopic_triangle01.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+
+.page__topic::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pageTopic_triangle02.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+
+.page__topicH2 {
+    font-family: "M PLUS 1";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px; 
+    
+    text-align: center;
+}
+
+.page__topicP {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;    
+
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* ページトピック　pc */
+@media screen and (min-width:769px) {
+    .page__topic {
+        width: 100%;
+        height: auto;
+        padding: 129px 0 135px;
+        position: relative;
+    }
+
+    .page__topic::before {
+        width: 134px;
+        height: 134px;
+    }
+    
+    .page__topic::after {
+        width: 134px;
+        height: 134px;
+    }
+
+    .page__topicH2 {
+        font-size: 5rem;
+        letter-spacing: 5px; 
+    }
+    
+    .page__topicP {
+        font-size: 2rem;
+    }
+}
+
+/* ご来院前に必ずご確認ください */
+.section__checkPoints {
+    padding: 46px 5.86%;
+    background-color: var(--main-color);
+}
+
+.checkPoints__topic {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;    
+
+    text-align: center;
+}
+
+.checkPoints__container {
+    margin-top: 28px;
+    padding: 40px 5.15%;
+    background-color: #FFF;
+    border-radius: 15px;
+}
+
+.checkPoints__subContainer {
+    margin-top: 40px;
+}
+
+.checkPoints__subContainer:first-of-type {
+    margin-top: 0;
+}
+
+.checkPoints__title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.6px;    
+}
+
+.checkPoints__txt {
+    font-size: 1.4rem;
+    line-height: normal;
+    letter-spacing: 1.4px;  
+    
+    margin-top: 24px;
+}
+
+/* ご来院前に必ずご確認ください pc */
+@media screen and (min-width:769px) {
+    .section__checkPoints {
+        padding: 55px 11.38%;
+    }
+
+    .checkPoints__topic {
+        font-size: 3rem;
+        letter-spacing: 3px;    
+    }
+
+    .checkPoints__container {
+        margin-top: 48px;
+        padding: 57px 10.6%;
+    }
+
+    .checkPoints__title {
+        font-size: 1.8rem;
+        letter-spacing: 1.8px;  
+        
+        margin-top: 19px;
+    }
+
+    .checkPoints__txt {
+        font-size: 1.8rem;
+        letter-spacing: 1.8px;  
+        
+        margin-top: 17px;
+    }
+}
+
+/* 診察の流れ */
+.section__flow {
+    padding: 36px 5.15%;
+}
+
+.section__topic {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px; 
+
+    text-align: center;   
+}
+
+.section__subTopic {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    
+    text-align: center;
+    margin-top: 10px;
+}
+
+.flow__topicBox {
+    color: #FFF;
+    font-family: "M PLUS 1";
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+
+    padding: 60px 0;
+    background-color: var(--main-color);
+    border-radius: 40px 40px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flow__txtAndBtn {
+    padding: 24px 0 0 0;
+    border: 3px solid var(--main-color);
+    border-radius: 0px 0px 0px 40px;
+}
+
+.flow__txtOnly {
+    padding: 24px 0;
+    border: 3px solid var(--main-color);
+    border-radius: 0px 0px 0px 40px;
+}
+
+.flow__txt {
+    font-size: 1.4rem;
+    line-height: normal;
+    letter-spacing: 1.4px;
+
+    margin: 0 4.84%;
+}
+
+.part__call__01 {
+    display: none;
+}
+
+.flow__container {
+    margin-top: 31px;
+}
+
+.flow__container:first-of-type {
+    margin-top: 45px;
+}
+
+
+/* 診察の流れ　pc */
+@media screen and (min-width:769px) {
+    .section__flow {
+        padding: 93px 11.38%;
+    }
+
+    .section__topic {
+        font-size: 3rem;
+        letter-spacing: 3px; 
+    }
+    
+    .section__subTopic {
+        font-size: 1.8rem;
+        letter-spacing: 1.8px;
+        
+        margin-top: 8px;
+    }
+
+    .flow__container {
+        display: flex;
+    }
+
+    .flow__topicBox {
+        width: 38%;
+        height: auto;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        border-radius: 40px 0px 0px 40px;
+        background-color: var(--main-color);
+        text-align: center;
+    }
+
+    .flow__txtAndBtn, 
+    .flow__txtOnly {
+        width: 62%;
+        padding: 56px 2.24%;
+        border: 3px solid var(--main-color);
+        border-radius: 0px 40px 0px 0px;
+    }
+
+    .part__call__01 {
+        display: flex;
+        margin-top: 42px;
+        margin-right: 19px;
+    }
+
+    .flow__txt {
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;
+    }
+
+    .flow__callAndLine {
+        display: flex;
+        align-self: center;
+    }
+}
+
+
+

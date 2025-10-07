@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* ページトピック */
+.page__topic {
+    width: 100%;
+    height: auto;
+    padding: 67px 0 57px;
+    position: relative;
+}
+
+.page__topic::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pageTopic_triangle01.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+
+.page__topic::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pageTopic_triangle02.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+
+.page__topicH2 {
+    font-family: "M PLUS 1";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px; 
+    
+    text-align: center;
+}
+
+.page__topicP {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;    
+
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* ページトピック　pc */
+@media screen and (min-width:769px) {
+    .page__topic {
+        width: 100%;
+        height: auto;
+        padding: 129px 0 135px;
+        position: relative;
+    }
+
+    .page__topic::before {
+        width: 134px;
+        height: 134px;
+    }
+    
+    .page__topic::after {
+        width: 134px;
+        height: 134px;
+    }
+
+    .page__topicH2 {
+        font-size: 5rem;
+        letter-spacing: 5px; 
+    }
+    
+    .page__topicP {
+        font-size: 2rem;
+    }
+}
+
+/* =================================
+Google Map
+=================================== */
+.googleMap {
+    display: block;
+    width: 86.1%;
+    height: 214px;
+    margin: 43px auto 0;
+}
+
+.googleMap__txt01 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+
+    text-align: center;
+    margin-top: 39px;
+}
+
+.googleMap__txt02, .googleMap__txt03 {
+    font-size: 1.6rem;
+    line-height: normal;
+    text-align: center;
+}
+
+.googleMap__txt02 {
+    margin-top: 27px;
+}
+
+.googleMap__txt03 {
+    margin-top: 21px;
+}
+
+/* Google Map pc */
+@media screen and (min-width:769px) {
+    .googleMap {
+        display: block;
+        width: 68.95%;
+        height: 405px;
+        margin: 76px auto 0;
+    }
+
+    .googleMap__txt01 {
+        font-size: 2.5rem;
+        letter-spacing: 2.5px;
+
+        margin-top: 49px;
+    }
+
+    .googleMap__txt02, .googleMap__txt03 {
+        font-size: 2rem;
+    }
+    
+    .googleMap__txt02 {
+        margin-top: 29px;
+    }
+
+    .googleMap__txt03 {
+        margin-top: 16px;
+    }
+
+}
+
+/* =================================
+駐車場案内
+=================================== */
+.parking {
+    margin: 103px 6.93%;
+}
+
+.section__topic {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px; 
+
+    text-align: center;   
+}
+
+.section__subTopic {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    
+    text-align: center;
+    margin-top: 10px;
+}
+
+.parking__img {
+    margin-top: 43px;
+    border-radius: 15px;
+}
+
+.parking__txt01 {
+    font-family: "M PLUS 1";
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px; 
+
+    text-align: center;
+    margin-top: 27px;
+}
+
+.parking__txt02 {
+    font-size: 1.4rem;
+    line-height: 25px; /* 178.571% */
+    letter-spacing: 1.4px;   
+    
+    margin-top: 27px;
+}
+
+@media screen and (min-width:769px) {
+    .parking {
+        margin-top: 96px;
+    }
+
+    .section__topic {
+        font-size: 3rem;
+        letter-spacing: 3px; 
+    }
+    
+    .section__subTopic {
+        font-size: 1.8rem;
+        letter-spacing: 1.8px;
+        
+        margin-top: 8px;
+    }
+
+    .parking__imgAndTxt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parking__img {
+        width: 39.1%;
+    }
+
+    .parking__txt {
+        width: 39.2%;
+        margin-left: 84px;
+    }
+
+    .parking__txt01 {
+        text-align: left;
+        font-size: 2.5rem;
+        letter-spacing: 2.5px;
+    }
+
+    .br__pc {
+        display: none;
+    }
+
+    .parking__txt02 {
+        font-size: 1.7rem;
+        line-height: 25px; /* 147.059% */
+        letter-spacing: 1.7px;   
+        
+        margin-top: 50px;
+    }
+}

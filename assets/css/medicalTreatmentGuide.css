@@ -1,0 +1,456 @@
+@charset "utf-8";
+/* ページトピック */
+.page__topic {
+    width: 100%;
+    height: auto;
+    padding: 67px 0 57px;
+    position: relative;
+}
+
+.page__topic::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pageTopic_triangle01.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+
+.page__topic::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pageTopic_triangle02.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+
+.page__topicH2 {
+    font-family: "M PLUS 1";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px; 
+    
+    text-align: center;
+}
+
+.page__topicP {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;    
+
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* ページトピック　pc */
+@media screen and (min-width:769px) {
+    .page__topic {
+        width: 100%;
+        height: auto;
+        padding: 129px 0 135px;
+        position: relative;
+    }
+
+    .page__topic::before {
+        width: 134px;
+        height: 134px;
+    }
+    
+    .page__topic::after {
+        width: 134px;
+        height: 134px;
+    }
+
+    .page__topicH2 {
+        font-size: 5rem;
+        letter-spacing: 5px; 
+    }
+    
+    .page__topicP {
+        font-size: 2rem;
+    }
+}
+
+/* =================================
+対象動物
+=================================== */
+.animalsWeTreat {
+    margin-top: 36px;
+}
+
+.animalsWeTreat__topic {
+    margin: 0 auto;
+    width: 120px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;    
+    background-color: white;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.animalsWeTreat__container {
+    width: 88%;
+    height: auto;
+    margin: -15px auto 0;
+    border: 3px solid var(--main-color);
+    border-radius: 15px;
+}
+
+.animalsWeTreat__animal {
+    margin-top: 40px;
+}
+
+.animal__img {
+    display: block;
+    margin: 0 auto;
+    width: 54.5%;
+}
+
+.animal__name {
+    font-family: "M PLUS 1";
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px; 
+    
+    text-align: center;
+    margin-top: 23px;
+}
+
+.animalsWeTreat__attention {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;    
+
+    margin: 41px auto 41px;
+    width: 90%;
+}
+
+/* 対象動物 pc */
+@media screen and (min-width:769px) {
+    .animalsWeTreat {
+        margin-top: 67px;
+    }
+    
+    .animalsWeTreat__topic {
+        width: 140px;
+        font-size: 3rem;
+        letter-spacing: 3px;    
+    }   
+    
+    .animalsWeTreat__container {
+        width: 94.8%;
+        height: auto;
+        margin: -20px auto 0;
+        border: 3px solid var(--main-color);
+        border-radius: 15px;
+    }
+
+    .animalsWeTreat__animals {
+        display: flex;
+        gap: 0 12%;
+        margin: 80px;
+        justify-content: center;
+    }
+
+    .animalsWeTreat__animal {
+        display: flex;
+        align-items: center;
+    }
+
+    .animal__img {
+        margin: 0;
+        width: 180px;
+        /* flex-shrink: 0; */
+    }
+
+    .animal__name {
+        margin-left:48px;
+    }
+}
+
+/* =================================
+診療科目
+=================================== */
+.medicalServices {
+    margin-top: 72px;
+}
+
+.section__topic {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px; 
+
+    text-align: center;   
+}
+
+.section__subTopic {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    
+    text-align: center;
+    margin-top: 10px;
+}
+
+.medicalServices__item {
+    margin: 29px auto 0;
+    width: 88%;
+}
+
+.medicalServices__txt01 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px; 
+    
+    text-align: center;
+}
+
+.medicalServices__border {
+    height: 3px;
+    border: none;
+    background-color: #FAEBA6;
+    margin-top: 16px;
+}
+
+.medicalServices__txt02 {
+    font-size: 1.4rem;
+    line-height: 25px; 
+    letter-spacing: 1.4px;   
+    
+    margin-top: 29px;
+}
+
+.medicalServices__txt03 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1.4px; 
+
+    margin-top: 16px;
+}
+
+.medicalServices__txt03 span {
+    font-weight: 400;
+}
+
+/* 診療科目　pc */
+@media screen and (min-width:769px) {
+    .medicalServices {
+        margin-top: 120px;
+    }
+
+    .medicalServices__container {
+        margin: 0 7.84% 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .medicalServices__item {
+        flex: 0 0 calc(50% - 149px); /* 横幅を2つで100%に収める */
+        box-sizing: border-box;
+        margin-top: 98px;
+    }
+
+    .medicalServices__txt01 {
+        font-size: 2.5rem;
+        letter-spacing: 2.5px;  
+        
+        text-align: left;
+    }
+
+    .medicalServices__txt02 {
+        font-size: 1.6rem;
+        line-height: 25px; /* 156.25% */
+        letter-spacing: 1.6px;
+
+        margin-top: 26px;
+    }
+
+    .medicalServices__txt02 {
+        font-size: 1.6rem;
+        line-height: 25px; /* 156.25% */
+        letter-spacing: 1.6px;
+
+        margin-top: 14px;
+    }
+}
+
+/* =================================
+予防接種案内
+=================================== */
+.vaccination {
+    margin: 72px 6% 0;
+}
+
+.vaccination__guidance {
+    margin-top: 33px;
+}
+
+.vaccination__guidance__img {
+    border-radius: 15px;
+}
+
+.vaccination__guidance__txt01 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;    
+
+    text-align: center;
+    margin-top: 33px;
+}
+
+.vaccination__guidance__txt02 {
+    font-size: 1.4rem;
+    line-height: 25px; /* 178.571% */
+    letter-spacing: 1.4px;
+
+    margin-top: 20px;
+}
+
+.vaccinationForAnimals {
+    margin-top: 33px;
+}
+
+.vaccinationForAnimals__container:nth-of-type(2) {
+    margin-top: 60px;
+}
+
+.vaccinationForAnimals__topic {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;    
+
+    text-align: center;
+}
+
+.vaccinationForAnimals__border {
+    height: 3px;
+    border: none;
+    background-color: #FAEBA6;
+    margin-top: 16px;
+}
+
+.vaccinationForAnimals__txt01 {
+    font-size: 1.4rem;
+    line-height: 25px; /* 178.571% */
+    letter-spacing: 1.4px;    
+
+    margin-top: 20px;
+}
+
+.vaccinationForAnimals__txt02 {
+    font-size: 1.4rem;
+    line-height: 25px; /* 178.571% */
+    letter-spacing: 1.4px;    
+
+    margin-top: 20px;
+}
+
+.vaccinationForAnimals__txt02 span {
+    font-weight: 700;
+}
+
+/* 予防接種案内　pc */
+@media screen and (min-width:769px) {
+    .vaccination {
+        margin-top: 124px 0 0;
+    }
+
+    .vaccination__guidance {
+        margin-top: 76px;
+        display: flex;
+        align-items: center;
+    }
+
+    .vaccination__guidance__img {
+        width: 44.7%;
+    }
+
+    .vaccination__guidance__txtBox {
+        margin-left: 6.9%;
+    }
+
+    .vaccination__guidance__txt01 {
+        font-size: 2.5rem;
+        letter-spacing: 3.75px;    
+    
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .vaccination__guidance__txt02 {
+        font-size: 1.7rem;
+        line-height: 25px; /* 178.571% */
+        letter-spacing: 1.7px;
+    
+        margin-top: 66px;
+    }
+
+    .vaccinationForAnimals {
+        margin-top: 83px;
+        display: flex;
+        gap: 92px;
+    }
+
+    .vaccinationForAnimals__container {
+        flex: 0 0 calc(50% - 45px); /* 横幅を2つで100%に収める */
+        box-sizing: border-box;
+    }
+
+    .vaccinationForAnimals__container:nth-of-type(2) {
+        margin-top: 0;
+    }
+
+    .vaccinationForAnimals__topic {
+        font-size: 2.5rem;
+        letter-spacing: 3.75px;    
+    
+        text-align: left;
+    }
+
+    .vaccinationForAnimals__border {
+        margin-top: 24px;
+    }
+
+    .vaccinationForAnimals__txt01 {
+        font-size: 1.7rem;
+        line-height: 25px; /* 178.571% */
+        letter-spacing: 1.7px;    
+    
+        margin-top: 24px;
+    }
+    
+    .vaccinationForAnimals__txt02 {
+        font-size: 1.7rem;
+        line-height: 25px; /* 178.571% */
+        letter-spacing: 1.7px;    
+    
+        margin-top: 48px;
+    }
+    
+}

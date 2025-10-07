@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* ページトピック */
+.page__topic {
+    width: 100%;
+    height: auto;
+    padding: 67px 0 57px;
+    position: relative;
+}
+
+.page__topic::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pageTopic_triangle01.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+
+.page__topic::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pageTopic_triangle02.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+
+.page__topicH2 {
+    font-family: "M PLUS 1";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px; 
+    
+    text-align: center;
+}
+
+.page__topicP {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;    
+
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* ページトピック　pc */
+@media screen and (min-width:769px) {
+    .page__topic {
+        width: 100%;
+        height: auto;
+        padding: 129px 0 135px;
+        position: relative;
+    }
+
+    .page__topic::before {
+        width: 134px;
+        height: 134px;
+    }
+    
+    .page__topic::after {
+        width: 134px;
+        height: 134px;
+    }
+
+    .page__topicH2 {
+        font-size: 5rem;
+        letter-spacing: 5px; 
+    }
+    
+    .page__topicP {
+        font-size: 2rem;
+    }
+}
+
+/* =================================
+院長自己紹介
+=================================== */
+.introduction__director {
+    margin: 35px 6% 0;
+}
+
+.introduction__director__img {
+    border-radius: 15px;
+}
+
+.introduction__director__career__pc {
+    display: none;
+}
+
+.introduction__director__container {
+    border-radius: 50px;
+    border: 3px solid var(--main-color);
+    text-align: center;
+    margin-top: 27px;
+}
+
+.introduction__director__name {
+    font-family: "M PLUS 1";
+    font-size: 2rem;
+    line-height: 30px; /* 150% */    
+
+    margin-top: 31px;
+    background: linear-gradient(transparent 60%, #FFC875 30%);
+    display: inline-block;
+}
+
+.introduction__director__name span {
+    font-weight: 700;
+}
+
+.introduction__director__career__sp {
+    font-size: 1.4rem;
+    line-height: 25px; /* 178.571% */ 
+    
+    margin-top: 39px;
+}
+
+.introduction__director__txt {
+    font-size: 1.4rem;
+    line-height: 25px; /* 178.571% */    
+
+    margin: 38px 5.3% 31px;
+    text-align: left;
+}
+
+/* 院長自己紹介　pc */
+@media screen and (min-width:769px) {
+    .introduction__director {
+        margin: 63px 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .introduction__director__imgAndCareer {
+        width: 39.1%;
+    }
+
+    
+    .introduction__director__career__pc {
+        font-size: 1.7rem;
+        line-height: 30px; /* 176.471% */
+
+        display: block;
+        margin: 86px 16.3% 0;
+    }
+
+    .introduction__director__container {
+        width: 46.31%;
+        border-radius: 50px 50px 50px 0px;
+        text-align: left;
+        margin-top: 0;
+        margin-left: 33px;
+    }
+    
+    .introduction__director__name {
+        font-size: 2.5rem;
+        line-height: 30px; /* 150% */    
+    
+        margin-top: 81px;
+        margin-left: 8.24%;
+    }
+
+    .introduction__director__career__sp {
+        display: none;
+    }
+
+    .introduction__director__txt {
+        font-size: 1.7rem;
+        line-height: 30px; /* 176.471% */
+    
+        margin: 63px 8.24% 76px;
+    }
+}
+
+/* =================================
+スタッフ自己紹介
+=================================== */
+.introduction__staff {
+    margin: 101px 6% 0;
+}
+
+.introduction__staff__nameAndCareer {
+    display: none;
+}
+
+.introduction__staff__container {
+    border-radius: 50px;
+    border: 3px solid var(--main-color);
+    text-align: center;
+
+    margin-top: 38px;
+}
+
+.introduction__staff__name__sp {
+    font-family: "M PLUS 1";
+    font-size: 2rem;
+    line-height: 30px; /* 150% */    
+
+    margin-top: 25px;
+    background: linear-gradient(transparent 60%, #FFC875 30%);
+    display: inline-block;
+}
+
+.introduction__staff__name__sp span {
+    font-weight: 700;
+}
+
+.introduction__staff__career__sp {
+    font-size: 1.4rem;
+    line-height: 30px; /* 214.286% */
+    margin: 46px 6.36% 0;
+}
+
+.introduction__staff__txt {
+    font-size: 1.4rem;
+    line-height: 30px; /* 214.286% */   
+    
+    margin: 38px 5.3% 31px;
+    text-align: left;
+}
+
+/* スタッフ自己紹介　pc */
+@media screen and (min-width:769px) {
+    .introduction__staff {
+        margin: 147px 0 0;
+    }
+
+    .introduction__staff__flexContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 95px;
+        align-items: center;
+    }
+
+    .introduction__staff__nameAndCareer {
+        display: block;
+        width: 26.38%;
+    }
+
+    .introduction__staff__name__pc {
+        font-family: "M PLUS 1";
+        font-size: 2.5rem;
+        line-height: 30px; /* 120% */
+
+        background: linear-gradient(transparent 60%, #FFC875 30%);
+        display: inline-block;
+    }
+
+    .introduction__staff__name__pc span {
+        font-weight: 700;
+    }
+
+    .introduction__staff__career__pc {
+        font-size: 1.7rem;
+        line-height: 30px; /* 176.471% */
+
+        margin-top: 49px;
+    }
+
+    .introduction__staff__container {
+        text-align: left;
+    
+        border-radius: 50px 50px 50px 0px;
+        margin-top: 0;
+        margin-left: 78px;
+        width: 55.97%;
+    }
+
+    .introduction__staff__name__sp {
+        display: none;
+    }
+
+    .introduction__staff__career__sp {
+        display: none;
+    }
+
+    .introduction__staff__txt {
+        font-size: 1.7rem;
+        line-height: 30px; /* 176.471% */
+        
+        margin: 54px 8.68%;
+    }
+
+}

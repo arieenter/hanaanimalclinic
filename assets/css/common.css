@@ -1,0 +1,465 @@
+@charset "utf-8";
+/* =================================
+common
+=================================== */
+:root {
+    --main-color:#FFA722;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family:
+        "Noto Sans JP",
+        Arial,
+        serif;
+    color: #575757;
+    background-color: #fff;
+    font-style: normal;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =================================
+header
+=================================== */
+.header {
+    padding: 35px 20px 35px 20px;
+}
+
+.header__topic img {
+    width: 212px;
+    height: auto;
+}
+
+
+/* .nav 初期表示 */
+.nav {
+    z-index: 100;
+    background-color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 35px 20px 56px 20px;
+    transform: translateX(-100%);
+    transition: transform 0.4s;
+}
+
+.nav.active {
+    transform: translateX(0);
+}
+
+.nav__topic {
+    width: 212px;
+    height: auto;
+}
+
+.nav__close {
+    width: 38px;
+    height: auto;
+    position: absolute;
+    top: 37px;
+    right: 5.3%;
+}
+
+.pc__headerItems {
+    display: none;
+}
+
+.nav__list {
+    margin-top: 60px;
+}
+
+.nav__item {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.2px;
+
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, var(--main-color), var(--main-color) 20px, transparent 20px);
+    background-size: 30px 2px;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__item::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon_arrowRight.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+.part__call {
+    margin: 48px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon__call {
+    width: 48px;
+    height: 48px;
+}
+
+.parts__call__texts {
+    margin-left: 5px;
+}
+
+.call__text01 {
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.call__text02 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.line__btn {
+    color: #FFF;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 40px;
+    padding: 16px 28px;
+    border-radius: 20px;
+    background: #00B900;
+    display: flex;
+}
+
+.line__btn::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon_line.png);
+    width: 36px;
+    height: 41px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 18px;
+}
+
+.icon__menu {
+    display: block;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+.part__call__pc {
+    display: none;
+}
+/* header pcバージョン */
+@media screen and (min-width: 769px) {
+    .header {
+        display: flex;
+        align-items: center;
+        max-width: 1500px;
+        height: 210px;
+        padding: 35px 64px;
+        justify-content: space-between;
+    }
+
+    .header__topic img {
+        width: 421px;
+        height: auto;
+    }
+
+    .nav__header {
+        display: none;
+    }
+
+    .nav {
+        background: transparent;
+        width: auto;
+        height: auto;
+        padding: 0;
+        position: static;
+        transform: translateX(0);
+        min-height: auto;
+    }
+    
+    .nav__list {
+        margin-top: 38px;
+        display: flex;
+        gap: 50px;
+    }
+
+    .nav__item:first-of-type {
+        display: none;
+    }
+
+    .nav__item {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.2px;
+    
+        padding-bottom: 0;
+        background-image: none;
+        background-size: 0px;
+        background-position: left bottom;
+        background-repeat: repeat-x;
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__item::after {
+        display: none;
+    }
+
+    .pc__headerItems {
+        display: flex;
+    }
+
+    .part__call__pc {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+
+    .icon__call__pc {
+        width: 53px;
+        height: 53px;
+    }
+    
+    .parts__call__texts__pc {
+        margin-left: 21px;
+    }
+    
+    .call__text01__pc {
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+    
+    .call__text02__pc {
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+
+    .part__call,
+    .line__btn {
+        display: none;
+    } 
+
+    .line__btn__pc {
+        color: #FFF;
+        font-size: 2.4rem;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+    
+        margin-top: 0;
+        margin-left: 47px;
+        padding: 16px 32px 12px 28px;
+        border-radius: 20px;
+        background: #00B900;
+        display: flex;
+    }
+    
+    .line__btn__pc::before {
+        content: '';
+        display: inline-block;
+        background-image: url(../images/icon_line.png);
+        width: 36px;
+        height: 41px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 18px;
+    }
+
+    .icon__menu {
+        display: none;
+    }
+}/* header pcバージョン */
+
+/* =================================
+footer
+=================================== */
+.footer {
+    padding: 35px 2.4% 47px;
+}
+
+.footer__topic {
+    width: 212px;
+    height: auto;
+    display: block;
+    margin: 36px auto 0;
+}
+
+.footer__access {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer__address {
+    font-size: 1.6rem;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    margin-top: 21px;    
+}
+
+.footer__googleMap {
+    width: 86.1%;
+    height: 214px;
+    display: block;
+    margin: 30px auto 0;
+}
+
+.footer__consultationHours {
+    margin-top: 22px;
+}
+
+
+
+.footer__lineBtn {
+    color: #FFF;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    align-items: center;
+    justify-content: center;
+
+    margin: 40px 20px;
+    padding: 16px 28px;
+    border-radius: 20px;
+    background: #00B900;
+    display: flex;
+}
+
+.footer__lineBtn::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icon_line.png);
+    width: 36px;
+    height: 41px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 18px;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__navItem {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+}
+
+.copy {
+    color: var(--main-color);
+    font-size: 1.5rem;
+
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* フッター　pc */
+@media screen and (min-width:769px) {
+    .footer {
+        padding: 60px 7.1%;
+        margin-top: 56px;
+    }
+
+    .footer__container01 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 100px;
+    }
+
+    .footer__topic {
+        width: 420px;
+        height: auto;
+        margin: 0;
+    }
+
+    .footer__googleMap {
+        width: 45%;
+        height: 360px;
+        display: block;
+        margin: 0;
+    }
+
+    .footer__access {
+        margin-top: 70px;
+    }
+
+    .footer__address {
+        font-size: 2rem;
+        letter-spacing: 1.6px;
+        margin-top: 35px;    
+    }
+
+    .footer__container02 {
+        margin-top: 47px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__consultationHours {
+        width: 58%;
+        margin-top: 0;
+    }
+
+    .footer__callAndLine {
+        margin-left: 74px;
+    }
+
+    .footer__lineBtn {
+        margin: 0;
+        margin-top: 42px;
+    }
+    
+    .footer__nav {
+        margin-top: 72px;
+        gap: 50px;
+    }
+
+    .footer__navItem {
+        font-size: 2.2rem;
+        letter-spacing: 2.2px;        
+    }
+
+    .copy {
+        font-size: 1.6rem;
+        margin-top: 42px;
+    }
+}

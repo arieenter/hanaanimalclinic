@@ -1,0 +1,362 @@
+@charset "utf-8";
+/* ページトピック */
+.page__topic {
+    width: 100%;
+    height: auto;
+    padding: 67px 0 57px;
+    position: relative;
+}
+
+.page__topic::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pageTopic_triangle01.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+
+.page__topic::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pageTopic_triangle02.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+
+.page__topicH2 {
+    font-family: "M PLUS 1";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px; 
+    
+    text-align: center;
+}
+
+.page__topicP {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;    
+
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* ページトピック　pc */
+@media screen and (min-width:769px) {
+    .page__topic {
+        width: 100%;
+        height: auto;
+        padding: 129px 0 135px;
+        position: relative;
+    }
+
+    .page__topic::before {
+        width: 134px;
+        height: 134px;
+    }
+    
+    .page__topic::after {
+        width: 134px;
+        height: 134px;
+    }
+
+    .page__topicH2 {
+        font-size: 5rem;
+        letter-spacing: 5px; 
+    }
+    
+    .page__topicP {
+        font-size: 2rem;
+    }
+}
+
+/* ご挨拶 */
+.section__greeting {
+    padding: 36px 8.8% 50px;
+}
+
+.section__topic {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px; 
+
+    text-align: center;   
+}
+
+.section__subTopic {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    
+    text-align: center;
+    margin-top: 10px;
+}
+
+.img__director {
+    margin-top: 36px;
+    border-radius: 15px;
+}
+
+.greeting__name01 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: normal;
+
+    text-align: center;
+    margin-top: 22px;
+}
+
+.greeting__phrase {
+    color: var(--main-color);
+    font-family: "M PLUS 1";
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 30px; 
+    letter-spacing: 3.75px;    
+
+    text-align: center;
+    margin-top: 23px;
+}
+
+.greeting__txt {
+    font-size: 1.6rem;
+    line-height: 25px; /* 156.25% */
+    letter-spacing: 1.6px;   
+
+    text-align: center;
+    margin-top: 22px;
+}
+
+.br__pc {
+    display: none;
+}
+
+.greeting__name02 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+    letter-spacing: 1.6px;
+
+    text-align: center;
+    margin-top: 33px;
+}
+
+/* ご挨拶 pc */
+@media screen and (min-width: 769px) {
+    .section__greeting {
+        padding: 48px 7.2% 97px;
+    }
+    
+    .section__topic {
+        font-size: 3rem;
+        letter-spacing: 3px; 
+    }
+    
+    .section__subTopic {
+        font-size: 1.8rem;
+        letter-spacing: 1.8px;
+        
+        margin-top: 8px;
+    }
+
+    .greeting__container {
+        display: flex;
+        align-items: center;
+        margin-top: 54px;
+    }
+
+    .greeting__right {
+        margin-left: 90px;
+    }
+
+    .img__director {
+        margin-top: 0;
+    }
+
+    .greeting__phrase {
+        font-size: 3.5rem;
+        font-weight: 500;
+        line-height: 45px; 
+        letter-spacing: 5.25px;    
+    
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .greeting__txt {
+        font-size: 1.7rem;
+        line-height: 25px;
+        letter-spacing: 1.7px;   
+    
+        text-align: left;
+        margin-top: 32px;
+    }
+
+    .br__pc {
+        display: block;
+    }
+
+    .greeting__name02 {
+        font-size: 1.7rem;
+        letter-spacing: 1.7px;
+    
+        text-align: left;
+        margin-top: 28px;
+    }
+}/* ご挨拶 pc */
+
+/* 院内の写真 Slick */
+.slider__item img {
+    /* width: 95%; */
+    border-radius: 15px;
+}
+
+.slider {
+    margin-top: 57px;
+}
+
+.slider__item {
+    margin: 0 47px;
+}
+
+/* 院内の写真 Slick pc*/
+@media screen and (min-width: 769px) {
+    .slider__item img {
+        margin: 0 auto;
+        width: 39.1%;
+    }
+}
+
+/* 当院概要表 */
+.section--clinic__info {
+    margin-top: 60px;
+}
+
+.clinic__info__box {
+    margin: 31px auto 0;
+    padding: 38px 0;
+    width: 88%;
+    height: auto;
+    border: 3px solid var(--main-color);
+    border-radius: 15px;
+}
+
+.clinic__infoTxt01 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px; 
+    
+    margin-top: 28px;
+    text-align: center;
+}
+
+.clinic__info:nth-of-type(1) {
+    .clinic__infoTxt01 {
+        margin-top: 0;
+    }
+}
+
+.clinic__infoTxt02 {
+    font-size: 2rem;
+    line-height: normal;
+    letter-spacing: 2px;
+
+    text-align: center;
+    margin-top: 27px;
+}
+
+.clinic__info__border {
+    border: none;
+    height: 1px;
+    background-color: #FFC875;
+    margin: 18px auto 0;
+    width: 89.6%;
+}
+
+.clinic__info__hours  {
+    display: block;
+    width: 95.4%;
+    margin: 28px auto 0;
+    text-align: center;
+}
+
+/* 当院概要表 pc */
+@media screen and (min-width: 769px) {
+    .section--clinic__info {
+        margin-top: 127px;
+    }
+
+    .clinic__info__box {
+        margin: 51px auto 0;
+        padding: 62px 0;
+        width: 74.5%;
+        height: auto;
+    }
+
+
+    .clinic__info {
+        display: flex;
+        margin-top: 51px;
+    }
+
+    .clinic__info:nth-of-type(1) {
+       margin-top: 0;
+    }
+
+    .clinic__infoTxt01 {
+        margin-top: 28px;
+        text-align: left;
+        margin-top: 0;
+        margin-left: 8.19%;
+    }
+
+    .clinic__infoTxt02 {
+        margin-top: 0;
+        text-align: left;
+        margin-left: 135px;
+    }
+
+    .clinic__info:nth-of-type(2) {
+        .clinic__infoTxt02 {
+            margin-left: 157px;
+        }
+    }
+
+    .clinic__info:nth-of-type(3) {
+        .clinic__infoTxt02 {
+            margin-left: 113px;
+        }
+    }
+
+    .clinic__info:nth-of-type(4) {
+        .clinic__infoTxt02 {
+            margin-left: 113px;
+        }
+    }
+
+    .clinic__info__hours  {
+        display: block;
+        width: 63.9%;
+        margin: 0;
+        margin-left: 113px;
+    }
+    
+}

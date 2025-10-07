@@ -1,0 +1,470 @@
+@charset "utf-8";
+/* ページトピック */
+.page__topic {
+    width: 100%;
+    height: auto;
+    padding: 67px 0 57px;
+    position: relative;
+}
+
+.page__topic::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pageTopic_triangle01.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+
+.page__topic::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pageTopic_triangle02.png);
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+}
+
+.page__topicH2 {
+    font-family: "M PLUS 1";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px; 
+    
+    text-align: center;
+}
+
+.page__topicP {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;    
+
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* ページトピック　pc */
+@media screen and (min-width:769px) {
+    .page__topic {
+        width: 100%;
+        height: auto;
+        padding: 129px 0 135px;
+        position: relative;
+    }
+
+    .page__topic::before {
+        width: 134px;
+        height: 134px;
+    }
+    
+    .page__topic::after {
+        width: 134px;
+        height: 134px;
+    }
+
+    .page__topicH2 {
+        font-size: 5rem;
+        letter-spacing: 5px; 
+    }
+    
+    .page__topicP {
+        font-size: 2rem;
+    }
+}
+
+/* =================================
+LINEでのご予約の案内
+=================================== */
+.reservation__line {
+    margin: 36px 6% 0;
+}
+
+.section__topic {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px; 
+
+    text-align: center;   
+}
+
+.section__subTopic {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    
+    text-align: center;
+    margin-top: 10px;
+}
+
+.reservation__line__howTo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 30px; /* 214.286% */
+    letter-spacing: 1.4px;    
+
+    text-align: center;
+    margin-top: 47px;
+}
+
+.qrCode {
+    display: block;
+    margin: 46px auto 0;
+    width: 41.5%;
+    height: auto;
+}
+
+.qrCode__txt {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.4px;
+
+    text-align: center;
+    margin-top: 53px;
+}
+
+.line__account {
+    margin-top: 53px;
+    border: 3px solid var(--main-color);
+    padding: 21px 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line__account__icon {
+    width: 14.15%;
+}
+
+.line__account__txt {
+    font-family: "M PLUS 1";
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 30px; /* 214.286% */
+    letter-spacing: 1.4px;   
+    margin-left: 12px; 
+}
+
+.line__account__arrow {
+    display: inline-block;
+    width: 20px;
+    margin-left: 8px;
+}
+
+/* LINEでの予約のご案内 */
+@media screen and (min-width:769px) {
+    .reservation__line {
+        margin: 82px 0 0;
+    } 
+
+    .section__topic {
+        font-size: 3rem;
+        letter-spacing: 3px; 
+    }
+    
+    .section__subTopic {
+        font-size: 1.8rem;
+        letter-spacing: 1.8px;
+        
+        margin-top: 8px;
+    }
+
+    .reservation__line__howTo {
+        font-size: 1.8rem;
+        letter-spacing: 1.8px;    
+    
+        margin-top: 58px;
+    }
+
+    .qrCode {
+        margin: 58px auto 0;
+        width: 9.51%;
+        height: auto;
+    }
+    
+    .qrCode__txt {
+        font-size: 1.8rem;
+        letter-spacing: 1.8px;
+    
+        margin-top: 51px;
+    }
+
+    .line__account {
+        margin: 51px auto 0;
+        padding: 20px 2%;
+        width: 45.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .line__account__icon {
+        width: 19.35%;
+    }
+
+    .line__account__txt {
+        font-size: 2.5rem;
+        line-height: 40px; /* 214.286% */
+        letter-spacing: 2.5px;  
+
+        margin-left: 47px; 
+    }
+    
+    .line__account__arrow {
+        width: 53px;
+        margin-left: 0;
+    }
+}
+
+/* =================================
+予約方法
+=================================== */
+.reservationMethod {
+    margin: 53px 6% 0;
+}
+
+.reservationMethod__topic {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;    
+
+    text-align: center;
+}
+
+.reservationMethod__container {
+    margin-top: 53px;
+}
+
+.reservationMethod__box {
+    border-radius: 18px;
+    border: 3px solid #FFA722;
+    height: 285px;
+}
+
+.reservationMethod__box__txt01 {
+    font-family: "M PLUS 1";
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;  
+    
+}
+
+.reservationMethod__box__txt01::before {
+    content: '1';
+    display: inline-flex;
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center;     /* 縦方向の中央揃え */
+    border-radius: 15px 0px;
+    background: #FFA722;
+    width: 56px;
+    height: 55px;
+
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    margin-right: 23px;
+}
+
+.reservationMethod__box:nth-of-type(2) .reservationMethod__box__txt01::before {
+    content: '2';
+}
+
+.reservationMethod__box:nth-of-type(3) .reservationMethod__box__txt01::before {
+    content: '3';
+}
+
+.reservationMethod__box__txt02 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 30px; /* 214.286% */
+    letter-spacing: 1.4px;
+
+    margin: 21px 13px 0 22px;
+}
+
+.reservationMethod__arrow__sp {
+    display: block;
+    margin: 11px auto;
+    width: 38px;
+}
+
+.reservationMethod__arrow__pc {
+    display: none;
+}
+
+.reservationMethod__attention {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 30px; /* 214.286% */
+    letter-spacing: 1.4px;    
+
+    text-align: center;
+    margin-top: 26px;
+}
+
+/* 予約方法 pc */
+@media screen and (min-width:769px) {
+    .reservationMethod {
+        margin: 69px 0 0;
+    }
+
+    .reservationMethod__topic {
+        font-size: 2.5rem;
+        letter-spacing: 2.5px;    
+    }
+
+    .reservationMethod__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reservationMethod__box {
+        width: 26.18%;
+        height: auto;
+    }
+
+    .reservationMethod__box:nth-of-type(1) {
+        padding-bottom: 84px;
+    }
+
+    .reservationMethod__box:nth-of-type(2) {
+        padding-bottom: 144px;
+    }
+
+    .reservationMethod__box:nth-of-type(3) {
+        padding-bottom: 24px;
+    }
+
+    .reservationMethod__box__txt01 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2px;  
+        
+    }
+
+    .reservationMethod__arrow__sp {
+        display: none;
+    }
+
+    .reservationMethod__arrow__pc {
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin: 0 18px;
+    }
+
+    .reservationMethod__attention {
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;    
+    
+        margin-top: 42px;
+    }
+}
+
+/* =================================
+電話予約・急患の方
+=================================== */
+.callingReservation {
+    margin-top: 77px;
+}
+
+.callingReservation__call {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    align-items: center;
+}
+
+.callingReservation__call__icon {
+    width: 53px;
+    height: 53px;
+}
+
+.callingReservation__call__txt {
+    margin-left: 8px;
+}
+
+.callingReservation__call__txt01 {
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.callingReservation__call__txt02 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: normal;  
+    
+    margin-top: 5px;
+}
+
+.callingReservation__attention {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 30px; /* 214.286% */
+    letter-spacing: 1.4px;  
+
+    text-align: center;
+    margin: 55px 6% 0;
+}
+
+/* 電話予約・急患の方　pc */
+@media screen and (min-width:769px) {
+    .callingReservation {
+        margin-top: 108px;
+    }
+
+    .callingReservation__call {
+        margin-top: 82px;
+    }
+
+    .callingReservation__call__icon {
+        width: 92px;
+        height: 92px;
+    } 
+
+    .callingReservation__call__txt {
+        margin-left: 17px;
+    }
+    
+    .callingReservation__call__txt01 {
+        font-size: 1.5rem;
+    }
+
+    .callingReservation__call__txt02 {
+        font-size: 5rem;
+        
+        margin-top: 16px;
+    }
+
+    .callingReservation__attention {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 30px; /* 214.286% */
+        letter-spacing: 1.6px;  
+
+        text-align: center;
+        margin: 38px 0 0;
+    }
+
+}
